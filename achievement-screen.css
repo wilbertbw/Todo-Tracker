@@ -1,0 +1,117 @@
+body {
+  font-family: Arial;
+  background-color: rgb(0, 53, 47);
+}
+
+.header-grid{
+  display: grid;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(206, 220, 0);
+  position: fixed;
+  grid-template-columns: 150px 150px 150px 1fr;
+}
+
+.todo-tracker-text{
+  font-size: 18px;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.tasks-button, .achievements-button{
+  background-color: rgb(206, 220, 0);
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  height: 56.8px;
+  width: 150px;
+}
+
+.tasks-button{
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-right-color: black;
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-right-color: black;
+}
+
+.achievements-button{
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-right-color: black;
+}
+
+.tasks-button:hover, .achievements-button:hover{
+  opacity: 0.7;
+}
+
+.tasks-button:active, .achievements-button:active{
+  opacity: 0.3;
+}
+
+.achievements-container{
+  margin-top: 80px;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-left: 400px;
+  margin-right: 400px;
+  background-color: rgb(206, 220, 0);
+}
+
+.per-achievement-container{
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  background-color: rgb(0, 89, 79);;
+  color: white;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.sub-division-title-container{
+  display: inline-block;
+  background-color: rgb(0, 89, 79);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.sub-division-title{
+  font-size: 22px;
+  margin: 0;
+  font-weight: bold;
+  color: white;
+}
+
+.achievement-title-and-completion-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.achievement-title{
+  margin: 0;
+  font-size: 18px;
+}
+
+.achievement-description{
+  margin: 0;
+  font-size: 14px;
+}
+
+.achievement-completion{
+  margin: 0;
+}
+
+.no-achievements{
+  text-align: center;
+}
+
+.no-achievements-text, .lets-finish-tasks-text{
+  font-size: 18px;
+}

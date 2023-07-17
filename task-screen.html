@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Tasks</title>
+
+    <link rel = "stylesheet" href = "task-screen.css">
+  </head>
+  <body>
+    <div class = "header-grid">
+      <p class = "todo-tracker-text">
+        Todo Tracker
+      </p>
+      <a class = "task-link" href = "task-screen.html">
+        <button class = "tasks-button">
+          Tasks
+        </button>
+      </a>
+      <a href = "achievement-screen.html">
+        <button class = "achievements-button">
+          Achievements
+        </button>
+      </a>
+      <div class = "js-tasks-completed tasks-completed"></div>
+    </div>
+    
+    <div class = "todo-input-grid">
+      <input class = "js-name-input name-input" placeholder = "Task Name">
+      <input class = "js-due-date-input due-date-input" type = "date">
+      <button class = "js-add-task-button add-task-button">Add</button>
+      <button class = "js-reset-tasks-completed-button reset-tasks-completed-button">
+        Reset Tasks Completed
+      </button>
+    </div>
+    <div class = "js-todo-list todo-grid"></div>
+    
+    <script src = "task-screen.js"></script>
+  </body>
+</html>
